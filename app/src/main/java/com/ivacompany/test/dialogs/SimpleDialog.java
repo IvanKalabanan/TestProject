@@ -12,8 +12,10 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.ivacompany.test.R;
+import com.ivacompany.test.TestApp;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -32,16 +34,31 @@ public class SimpleDialog extends DialogFragment {
 
     @OnClick(R.id.item_one)
     public void item_one(){
+        Toast.makeText(
+                TestApp.getAppContext(),
+                "item_one: Click",
+                Toast.LENGTH_SHORT)
+                .show();
         Log.d(TAG, "item_one: Click");
     }
 
     @OnClick(R.id.item_two)
     public void item_two(){
+        Toast.makeText(
+                TestApp.getAppContext(),
+                "item_two: Click",
+                Toast.LENGTH_SHORT)
+                .show();
         Log.d(TAG, "item_two: Click");
     }
 
     @OnClick(R.id.item_three)
     public void item_three(){
+        Toast.makeText(
+                TestApp.getAppContext(),
+                "item_three: Click",
+                Toast.LENGTH_SHORT)
+                .show();
         Log.d(TAG, "item_three: Click");
     }
 

@@ -4,7 +4,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
-import com.ivacompany.test.DBHelper;
 import com.ivacompany.test.TestApp;
 import com.ivacompany.test.model.FileModel;
 

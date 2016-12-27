@@ -165,16 +165,31 @@ public class FileRecyclerViewAdapter
 
         @OnClick(R.id.swipe_item_three)
         public void swipeItemThree(){
+            Toast.makeText(
+                    TestApp.getAppContext(),
+                    "item_three: Click",
+                    Toast.LENGTH_SHORT)
+                    .show();
             Log.d(TAG, "Three item click ");
         }
 
         @OnClick(R.id.swipe_item_two)
         public void swipeItemTwo(){
+            Toast.makeText(
+                    TestApp.getAppContext(),
+                    "item_second: Click",
+                    Toast.LENGTH_SHORT)
+                    .show();
             Log.d(TAG, "Second item click ");
         }
 
         @OnClick(R.id.swipe_item_one)
         public void swipeItemOne(){
+            Toast.makeText(
+                    TestApp.getAppContext(),
+                    "item_one: Click",
+                    Toast.LENGTH_SHORT)
+                    .show();
             Log.d(TAG, "First item click ");
         }
 

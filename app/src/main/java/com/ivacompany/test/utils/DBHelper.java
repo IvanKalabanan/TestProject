@@ -1,4 +1,4 @@
-package com.ivacompany.test;
+package com.ivacompany.test.utils;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.ivacompany.test.R;
 import com.ivacompany.test.TestApp;
@@ -33,6 +34,7 @@ public class MainFragment extends Fragment {
     public static final String TAG = "MainFragment";
 
     @BindView(R.id.recyclerView) RecyclerView recyclerView;
+    @BindView(R.id.noData) TextView noData;
 
     FragmentRequestListener fragmentRequestListener;
 
@@ -59,6 +61,10 @@ public class MainFragment extends Fragment {
         Utils.initDB();
 
         fileList = Utils.getFiles(getArguments().getInt(Constants.ID));
+
+        if (fileList.isEmpty()){
+            noData.setVisibility(View.VISIBLE);
+        }
 
         initRecyclerView();
 
